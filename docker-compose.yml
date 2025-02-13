@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URI=mongodb+srv://janinduravishka1999:9X6fv21yYLpFREH8@cluster0.cf4yo.mongodb.net/hrs?retryWrites=true&w=majority
+    depends_on:
+      - mongo
+    restart: always

@@ -57,6 +57,8 @@ export default function RegistrationPage() {
     },
   });
 
+  //  /api/checkout endpoint to process through payment
+  //  /api/hospitals endpoint to process direct registration
   async function onSubmit(values: z.infer<typeof formSchema>) {
     console.log("Submitting form...", values);
     setLoading(true);
